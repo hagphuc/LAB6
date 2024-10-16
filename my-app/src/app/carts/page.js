@@ -9,7 +9,7 @@ import {
   Box,
   Button,
 } from "@mui/material";
-import Layout from "../components/Layout"; // Ensure you're importing your layout
+import Layout from "../components/Layout";
 import { getCart, removeFromCart } from "../utils/LocalStorage";
 import { useEffect, useState } from "react";
 

@@ -1,4 +1,3 @@
-// Import necessary dependencies
 import {
   Container,
   Grid,
@@ -6,7 +5,7 @@ import {
   CardMedia,
   Box,
 } from "@mui/material";
-import Layout from "../../components/Layout"; // Ensure you're importing your layout  
+import Layout from "../../components/Layout"; 
 import AddToCartButton from "../../components/AddToCartButton";
 const products = [
   {
@@ -53,12 +52,10 @@ const products = [
   },
 ];
 
-// Static generation parameters
 export function generateStaticParams() {
   return [{ id: "1" }, { id: "2" }, { id: "3" }];
 }
 
-// Product detail page component
 export default function Page({ params }) {
   const { id } = params;
   const product = products.find((p) => p.id === id);
